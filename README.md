@@ -7,15 +7,16 @@ This repository contains a Python program using Qiskit to simulate AND, OR, XOR,
 
 ### 1. AND Gate
 
-Function: `and_gate(input1, input2)`
+Function: `and_gate()`
 
-Description: This function simulates the AND gate and takes two binary inputs (0 or 1)  and  using Qiskit Simulator returns the output along with the corresponding quantum circuit.
+Description: This function simulates the AND gate and takes all the possible inputs (0 or 1)  and  using Qiskit Simulator returns the output for each caes along with it's own corresponding quantum circuit.
 
 Example:
 
 ```python
-output, circuit = and_gate(input1, input2)
-print("AND output:", output)
+output, circuit = and_gate()
+print("AND Gate : " )
+print(f"Inputs: {inputs} -> Output: {result['output']}")
 print("AND quantum circuit:")
 print(circuit)
 ```
@@ -24,13 +25,13 @@ print(circuit)
 
 Function: `or_gate(input1, input2)`
 
-Description: This function simulates the OR gate and takes two binary inputs (0 or 1) and  using Qiskit Simulator  returns the output along with the corresponding quantum circuit.
-
+Description: This function simulates the OR gate and takes all the possible inputs (0 or 1)  and  using Qiskit Simulator returns the output for each caes along with it's own corresponding quantum circuit.
 Example:
 
 ```python
-output, circuit = or_gate(input1, input2)
-print("OR output:", output)
+output, circuit = or_gate()
+print("OR Gate : " )
+print(f"Inputs: {inputs} -> Output: {result['output']}")
 print("OR quantum circuit:")
 print(circuit)
 ```
@@ -39,13 +40,13 @@ print(circuit)
 
 Function: `xor_gate(input1, input2)`
 
-Description: This function simulates the XOR gate and takes two binary inputs (0 or 1) and  using Qiskit Simulator  returns the output along with the corresponding quantum circuit.
-
+Description: This function simulates the XOR gate and takes all the possible inputs (0 or 1)  and  using Qiskit Simulator returns the output for each caes along with it's own corresponding quantum circuit.
 Example:
 
 ```python
-output, circuit = xor_gate(input1, input2)
-print("XOR output:", output)
+output, circuit = xor_gate()
+print("XOR Gate : " )
+print(f"Inputs: {inputs} -> Output: {result['output']}")
 print("XOR quantum circuit:")
 print(circuit)
 ```
@@ -54,37 +55,26 @@ print(circuit)
 
 Function: `nand_gate(input1, input2)`
 
-Description: This function simulates the NAND gate and takes two binary inputs (0 or 1) and  using Qiskit Simulator returns the output along with the corresponding quantum circuit.
-
+Description: This function simulates the NAND gate and takes all the possible inputs (0 or 1)  and  using Qiskit Simulator returns the output for each caes along with it's own corresponding quantum circuit.
 Example:
 
 ```python
-output, circuit = nand_gate(input1, input2)
-print("NAND output:", output)
+output, circuit = nand_gate()
+print("NAND Gate : " )
+print(f"Inputs: {inputs} -> Output: {result['output']}")
 print("NAND quantum circuit:")
 print(circuit)
-```
-
-## How to Use
-
-1. Clone this repository or download the code files.
-
-2. Import the functions in your Python code:
-
-```python
-from gates_simulator import and_gate, or_gate, xor_gate, nand_gate
 ```
 
 3. Call the desired gate function with your input values:
 
 ```python
-input1 = #input from the user 
-input2 = #input from the user 
 
-output_and, circuit_and = and_gate(input1, input2)
-output_or, circuit_or = or_gate(input1, input2)
-output_xor, circuit_xor = xor_gate(input1, input2)
-output_nand, circuit_nand = nand_gate(input1, input2)
+
+output_and, circuit_and = and_gate()
+output_or, circuit_or = or_gate()
+output_xor, circuit_xor = xor_gate()
+output_nand, circuit_nand = nand_gate()
 
 print("AND output:", output_and)
 print("AND quantum circuit:")
